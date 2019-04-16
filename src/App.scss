@@ -75,7 +75,7 @@ body {
     cursor: pointer;
     font-size: 18px;
     @include laptop {
-      width: 30%;
+      width: 33%;
       font-size: 16px;
     }
     @include tablet {
@@ -84,10 +84,10 @@ body {
     }
     @include mobile {
       font-size: 12px;
-      width: 28%;
+      width: 30%;
     }
     @include xs-mobile {
-      width: 28%;
+      width: 30%;
     }
   }
   &__button:hover {
