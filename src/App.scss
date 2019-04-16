@@ -80,6 +80,7 @@ body {
     }
     @include tablet {
       font-size: 14px;
+      width: 30%;
     }
     @include mobile {
       font-size: 12px;
