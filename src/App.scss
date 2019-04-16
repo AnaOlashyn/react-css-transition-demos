@@ -84,6 +84,9 @@ body {
     @include mobile {
       font-size: 12px;
     }
+    @include xs-mobile {
+      width: 30%;
+    }
   }
   &__button:hover {
     background-color: white; 
