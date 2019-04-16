@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import './mixins.scss';
+
+$main-color: springgreen;
+
+body {
+  background-color: rgb(27, 27, 27);
+  overflow: hidden;
+}
+
+.app {
+  font-family: 'Montserrat', sans-serif;
+  color: $main-color;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  min-height: 800px;
+  @include tablet {
+    width: 60%;
+  }
+  @include mobile {
+    width: 80%;
+    min-height: 700px;
+  }
+  @include xs-mobile {
+    width: 90%;
+    min-height: 550px;
+  }
+  &__title {
+    letter-spacing: 0.8px;
+    font-size: 38px;
+    @include laptop {
+      font-size: 34px;
+    }
+    @include tablet {
+      font-size: 30px;
+    }
+    @include mobile {
+      font-size: 20px;
+    }
+    @include xs-mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+  }
+
+  &__row-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    width: 24.5%;
+    border: solid 2px $main-color;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    cursor: pointer;
+    font-size: 18px;
+    @include laptop {
+      width: 33%;
+      font-size: 16px;
+    }
+    @include tablet {
+      font-size: 14px;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+  &__button:hover {
+    background-color: white; 
+  }
+  &__blocks {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__block {
+    opacity: 1;
+    width: 23.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 0%;
+    border: solid 2px $main-color;
+    border-radius: 100px;
+    margin: 3px 3px 5px 3px;
+    cursor: pointer;
+    transition: 1.5s;
+    @include laptop {
+      width: 32%;
+    }
+    @include tablet {
+      width: 30%;
+    }
+  }
+  &__block:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  &__icon {
+    font-size: 80px;
+    @include laptop {
+      width: 80px;
+    }
+    @include mobile {
+      font-size: 70px;
+    }
+    @include xs-mobile {
+      font-size: 70px;
+    }
+  }
+}
+
+.white {
+  background-color: rgba(255, 255, 255, 0.514);
+}
+
+.big-button {
+  width: 100%;
+}
+
+.red:hover {
+  color: red;
+  border: solid 2px red; 
+}
+
+.darkturquoise:hover {
+  color: rgb(0, 125, 209);
+  border: solid 2px rgb(0, 125, 209); 
+}
+
+.yellow:hover {
+  color: rgb(245, 220, 0);
+  border: solid 2px rgb(245, 220, 0); 
+}
+
+.darkviolet:hover {
+  color: darkviolet;
+  border: solid 2px darkviolet; 
+}
+
+.azure:hover {
+  color: rgb(0, 236, 253);
+  border: solid 2px rgb(0, 236, 253); 
+}
+
+.tomato:hover {
+  color: rgb(250, 98, 52);
+  border: solid 2px rgb(250, 98, 52); 
+}
+
+.fuchsia:hover {
+  color: rgb(234, 0, 255);
+  border: solid 2px rgb(234, 0, 255); 
+}
+
+.green:hover {
+  color: rgb(0, 116, 0);
+  border: solid 2px rgb(0, 116, 0); 
+}
+
+.springreen:hover {
+  color:  rgb(0, 194, 97);
+}
+
+.opacityOn {
+  opacity: 0;
+  transition: 2s;
+}
+
+.slideOn {
+  transition: 2s;
+  transform: translateX(-1000%);
+}
+
+.slideUpOn {
+  transition: 2s;
+  transform: translateY(1000%);
+}
+
+.slideOutOn {
+  transition: 2s;
+  transform: translate(1300%,-1000%);
+}
+
+.heightOn {
+  transition: 2s;
+  transform: scaleY(0);
+}
+
+.widthOn {
+  transition: 2s;
+  transform: scaleX(0);
+}
+
+.sizeOn {
+  transition: 2s;
+  transform: scale(0);
+}
+
+.rotateOn {
+  opacity: 0;
+  transition: 2s;
+  transform: rotate(720deg);
+}
