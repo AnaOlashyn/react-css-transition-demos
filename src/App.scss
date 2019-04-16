@@ -29,7 +29,7 @@ body {
   }
   @include xs-mobile {
     width: 90%;
-    min-height: 550px;
+    min-height: 500px;
   }
   &__title {
     letter-spacing: 0.8px;
@@ -111,6 +111,9 @@ body {
     }
     @include tablet {
       width: 30%;
+    }
+    @include xs-mobile {
+      padding: 3% 0%;
     }
   }
   &__block:hover {
