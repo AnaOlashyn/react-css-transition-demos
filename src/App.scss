@@ -83,6 +83,7 @@ body {
     }
     @include mobile {
       font-size: 12px;
+      width: 28%;
     }
     @include xs-mobile {
       width: 28%;
