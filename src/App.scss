@@ -19,13 +19,12 @@ body {
   align-items: center;
   justify-content: space-around;
   width: 50%;
-  min-height: 800px;
+  min-height: 680px;
   @include tablet {
     width: 60%;
   }
   @include mobile {
     width: 80%;
-    min-height: 700px;
   }
   @include xs-mobile {
     width: 90%;
@@ -34,6 +33,7 @@ body {
   &__title {
     letter-spacing: 0.8px;
     font-size: 38px;
+    padding-bottom: 10px;
     @include laptop {
       font-size: 34px;
     }
@@ -105,14 +105,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6% 0%;
+    padding: 3% 0%;
     border: solid 2px $main-color;
     border-radius: 100px;
     margin: 3px 3px 5px 3px;
     cursor: pointer;
     transition: 1.5s;
     @include laptop {
-      width: 32%;
+      width: 30%;
     }
     @include tablet {
       width: 30%;
@@ -133,7 +133,7 @@ body {
       font-size: 70px;
     }
     @include xs-mobile {
-      font-size: 70px;
+      font-size: 63px;
     }
   }
 }
