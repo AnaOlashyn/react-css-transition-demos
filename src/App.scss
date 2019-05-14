@@ -6,6 +6,7 @@ $main-color: springgreen;
 body {
   background-color: rgb(27, 27, 27);
   overflow: hidden;
+  height: 100vh;
 }
 
 .app {
@@ -13,11 +14,12 @@ body {
   color: $main-color;
   position: absolute;
   left: 50%;
+  height: 100vh;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 50%;
   min-height: 680px;
   @include tablet {
@@ -31,9 +33,10 @@ body {
     min-height: 500px;
   }
   &__title {
+    padding-top: 3%;
     letter-spacing: 0.8px;
     font-size: 38px;
-    padding-bottom: 10px;
+    padding-bottom: 3%;
     @include laptop {
       font-size: 34px;
     }
@@ -75,19 +78,19 @@ body {
     cursor: pointer;
     font-size: 18px;
     @include laptop {
-      width: 33%;
+      width: 30%;
       font-size: 16px;
     }
     @include tablet {
-      font-size: 14px;
-      width: 30%;
+      font-size: 13px;
+      width: 24%;
     }
     @include mobile {
-      font-size: 12px;
-      width: 30%;
+      font-size: 11px;
+      width: 24%;
     }
     @include xs-mobile {
-      width: 30%;
+      width: 24%;
     }
   }
   &__button:hover {
@@ -98,6 +101,7 @@ body {
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 3%;
   }
   &__block {
     opacity: 1;
@@ -112,10 +116,10 @@ body {
     cursor: pointer;
     transition: 1.5s;
     @include laptop {
-      width: 30%;
+      width: 23%;
     }
     @include tablet {
-      width: 30%;
+      width: 23%;
     }
     @include xs-mobile {
       padding: 3% 0%;
@@ -130,7 +134,7 @@ body {
       width: 80px;
     }
     @include mobile {
-      font-size: 70px;
+      font-size: 66px;
     }
     @include xs-mobile {
       font-size: 63px;

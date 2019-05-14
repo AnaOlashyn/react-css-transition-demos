@@ -11,7 +11,7 @@ class App extends Component {
     this.handleClickHeight();
     this.handleClickWidth();
     this.handleClickSize();
-    this.handleClickRotate();//
+    this.handleClickRotate();
   }
   handleClickOpacity = () => {
     document.querySelector('.opacity').classList.toggle('opacityOn');
